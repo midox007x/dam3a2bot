@@ -27,10 +27,10 @@ ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
 #ubah mid di dalem admin,owner,creator.json dengan mid kalian
 poll = LinePoll(aditmadzs)
 call = aditmadzs
-creator = ["u92da257539ee230b60c1d460bab85015"]
-owner = ["u92da257539ee230b60c1d460bab85015"]
-admin = ["u92da257539ee230b60c1d460bab85015"]
-staff = ["u92da257539ee230b60c1d460bab85015"]
+creator = ["u92da257539ee230b60c1d460bab85015","uc9ccccc8d1b608d2197b669a0dc21a4a"]
+owner = ["u92da257539ee230b60c1d460bab85015","uc9ccccc8d1b608d2197b669a0dc21a4a"]
+admin = ["u92da257539ee230b60c1d460bab85015","uc9ccccc8d1b608d2197b669a0dc21a4a"]
+staff = ["u92da257539ee230b60c1d460bab85015","uc9ccccc8d1b608d2197b669a0dc21a4a"]
 mid = aditmadzs.getProfile().mid
 Amid = ki.getProfile().mid
 KAC = [aditmadzs,ki]
@@ -1009,13 +1009,13 @@ def bot(op):
                     msg_id = op.param2
                     if msg_id in msg_dict:
                         if msg_dict[msg_id]["from"]:
-                           if msg_dict[msg_id]["text"] == 'Gambarnya dibawah':
+                           if msg_dict[msg_id]["text"] == 'The picture below':
                                 ginfo = aditmadzs.getGroup(at)
                                 Aditmadzs = aditmadzs.getContact(msg_dict[msg_id]["from"])
                                 zx = ""
                                 zxc = ""
                                 zx2 = []
-                                xpesan =  "「 Gambar Dihapus 」\n• Pengirim : "
+                                xpesan =  "「 Image Deleted 」\n• Sender : "
                                 ret_ = "• Nama Grup : {}".format(str(ginfo.name))
                                 ret_ += "\n• Waktu Ngirim : {}".format(dt_to_str(cTime_to_datetime(msg_dict[msg_id]["createdTime"])))
                                 ry = str(Aditmadzs.displayName)
@@ -1166,7 +1166,7 @@ def bot(op):
                            plihth = random.choice(idth)
                            jenis = ["5","6","7","8"]
                            plihjenis = random.choice(jenis)
-                           aditmadzs.sendMessage(msg.to, "Yang suka ngetag minta di gift yaa!?\nCek di chat, udah aku gift tuh...")
+                           aditmadzs.sendMessage(msg.to, "Who likes to ask for a gift!?\nCheck in chat, I've gifted it...")
                            aditmadzs.sendMessage(msg._from, None, contentMetadata={"PRDID":plihth,"PRDTYPE":"THEME","MSGTPL":plihjenis}, contentType=9)
                            break                       
                if 'MENTION' in msg.contentMetadata.keys() != None:
@@ -1246,19 +1246,19 @@ def bot(op):
                  if msg._from in admin:
                   if wait["addbots"] == True:
                     if msg.contentMetadata["mid"] in Bots:
-                        aditmadzs.sendMessage(msg.to,"Contact itu sudah jadi anggota bot")
+                        aditmadzs.sendMessage(msg.to,"The contact is already a member of the bot")
                         wait["addbots"] = True
                     else:
                         Bots.append(msg.contentMetadata["mid"])
                         wait["addbots"] = True
-                        aditmadzs.sendMessage(msg.to,"Berhasil menambahkan ke anggota bot")
+                        aditmadzs.sendMessage(msg.to,"Successfully added to bot members")
                  if wait["dellbots"] == True:
                     if msg.contentMetadata["mid"] in Bots:
                         Bots.remove(msg.contentMetadata["mid"])
-                        aditmadzs.sendMessage(msg.to,"Berhasil menghapus dari anggota bot")
+                        aditmadzs.sendMessage(msg.to,"Successfully deleted from bot member")
                     else:
                         wait["dellbots"] = True
-                        aditmadzs.sendMessage(msg.to,"Contact itu bukan anggota Aditmadzs BOT")
+                        aditmadzs.sendMessage(msg.to,"The contact was not a member of the BOT dam3aa")
 #===========ADD STAFF============#
                  if msg._from in admin:
                   if wait["addstaff"] == True:
@@ -1281,19 +1281,19 @@ def bot(op):
                  if msg._from in admin:
                   if wait["addadmin"] == True:
                     if msg.contentMetadata["mid"] in admin:
-                        aditmadzs.sendMessage(msg.to,"Contact itu sudah jadi admin")
+                        aditmadzs.sendMessage(msg.to,"The contact has become an admin")
                         wait["addadmin"] = True
                     else:
                         admin.append(msg.contentMetadata["mid"])
                         wait["addadmin"] = True
-                        aditmadzs.sendMessage(msg.to,"Berhasil menambahkan ke admin")
+                        aditmadzs.sendMessage(msg.to,"Successfully added to admin")
                  if wait["delladmin"] == True:
                     if msg.contentMetadata["mid"] in admin:
                         admin.remove(msg.contentMetadata["mid"])
-                        aditmadzs.sendMessage(msg.to,"Berhasil menghapus dari admin")
+                        aditmadzs.sendMessage(msg.to,"Successfully deleted from admin")
                     else:
                         wait["delladmin"] = True
-                        aditmadzs.sendMessage(msg.to,"Contact itu bukan admin")
+                        aditmadzs.sendMessage(msg.to,"The contact is not admin")
 #===========ADD BLACKLIST============#
                  if msg._from in admin:
                   if wait["wblacklist"] == True:
@@ -1500,7 +1500,7 @@ def bot(op):
                         elif cmd == "about" or cmd == "informasi":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
-                               sendMention(msg.to, sender, "「 Aditmadzs SelfBOT 1 Assist 」\n")
+                               sendMention(msg.to, sender, "「 dam3aa SelfBOT 1 Assist 」\n")
                                aditmadzs.sendMessage(msg.to, None, contentMetadata={'mid': mid}, contentType=13)
 
                         elif cmd == "me" or text.lower() == 'me':
@@ -1570,7 +1570,7 @@ def bot(op):
                                pesan = text.replace(sep[0] + " ","")
                                saya = aditmadzs.getGroupIdsJoined()
                                for group in saya:
-                                   aditmadzs.sendMessage(group,"=======[BROADCAST]=======\n\n"+pesan+"\n\nCreator : line.me/ti/p/~adit_cmct")
+                                   aditmadzs.sendMessage(group,"=======[BROADCAST]=======\n\n"+pesan+"\n\nCreator : line.me/ti/p/~dam3aa")
 
                         elif text.lower() == "mykey":
                           if wait["selfbot"] == True:
@@ -2134,7 +2134,7 @@ def bot(op):
                                   cctv['cyduk'][msg.to]=False
                                   aditmadzs.sendMessage(msg.to, "تم ايقاف الكماشه\n\nTanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\nJam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]")
                               else:
-                                  aditmadzs.sendMessage(msg.to, "Sudak tidak aktif")
+                                  aditmadzs.sendMessage(msg.to, "Already inactive")
 
 #===========Hiburan============#
                                       
