@@ -27,10 +27,10 @@ ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
 #ubah mid di dalem admin,owner,creator.json dengan mid kalian
 poll = LinePoll(aditmadzs)
 call = aditmadzs
-creator = ["u874a7502c02896b2edbb3445c2615d35"]
-owner = ["u874a7502c02896b2edbb3445c2615d35"]
-admin = ["u874a7502c02896b2edbb3445c2615d35"]
-staff = ["u874a7502c02896b2edbb3445c2615d35"]
+creator = ["u92da257539ee230b60c1d460bab85015"]
+owner = ["u92da257539ee230b60c1d460bab85015"]
+admin = ["u92da257539ee230b60c1d460bab85015"]
+staff = ["u92da257539ee230b60c1d460bab85015"]
 mid = aditmadzs.getProfile().mid
 Amid = ki.getProfile().mid
 KAC = [aditmadzs,ki]
@@ -219,7 +219,7 @@ def mentionMembers(to, mid):
 def siderMembers(to, mid):
     try:
         arrData = ""
-        textx = "Total Sider User「{}」\nHaii ".format(str(len(mid)))
+        textx = "أنت متصل الان「{}」\nمرحبا".format(str(len(mid)))
         arr = []
         no = 1
         num = 2
@@ -246,7 +246,7 @@ def siderMembers(to, mid):
 def welcomeMembers(to, mid):
     try:
         arrData = ""
-        textx = "Total Member Masuk「{}」\nHaii  ".format(str(len(mid)))
+        textx = "Total Member Enter「{}」\nHaii  ".format(str(len(mid)))
         arr = []
         no = 1
         num = 2
@@ -337,7 +337,7 @@ def help():
     key = Setmain["keyCommand"]
     key = key.title()
     helpMessage = "╔════════════════════╗" + "\n" + \
-                  " ◄]·✪Aditmadzs✪·[►" + "\n" + \
+                  " ◄]·✪dam3abot✪·[►" + "\n" + \
                   "╚════════════════════╝" + "\n" + \
                   "╔════════════════════╗" + "\n" + \
                   " ◄]·✪·Menu·✪·[►" + "\n" + \
@@ -448,10 +448,10 @@ def help():
                   "╠❂➣ " + key + "Listprotect\n" + \
                   "╠❂➣ Ketik「 Refresh 」Jika Sudah\n╠❂➣ Menggunakan Command Diatas...\n" + \
                   "╠════════════════════╗" + "\n" + \
-                  " ◄]·✪Aditmadzs✪·[►" + "\n" + \
+                  " ◄]·✪dam3abot✪·[►" + "\n" + \
                   "╠════════════════════╝" + "\n" + \
                   "╠════════════════════╗" + "\n" + \
-                  "◄]·✪line.me/ti/p/~adit_cmct✪·[►" + "\n" + \
+                  "◄]·✪line.me/ti/p/~dam3aa✪·[►" + "\n" + \
                   "╚════════════════════╝"
     return helpMessage
     
@@ -461,7 +461,7 @@ def helpbot():
     key = Setmain["keyCommand"]
     key = key.title()
     helpMessage1 = "╔════════════════════╗" + "\n" + \
-                  " 🍁🍁🍁 Aditmadzs 🍁🍁🍁" + "\n" + \
+                  " 🍁🍁🍁 dam3abot 🍁🍁🍁" + "\n" + \
                   "╚════════════════════╝" + "\n" + \
                   "╔════════════════════╗" + "\n" + \
                   " ◄]·✪·BOT·✪·[►" + "\n" + \
@@ -518,17 +518,17 @@ def helpbot():
                   "╠❂➣ " + key + "Clearban\n" + \
                   "╠❂➣ " + key + "Refresh\n" + \
                   "╠════════════════════╗" + "\n" + \
-                  "  ◄]·✪Aditmadzs✪·[►" + "\n" + \
+                  "  ◄]·✪dam3abot✪·[►" + "\n" + \
                   "╠════════════════════╝" + "\n" + \
                   "╠════════════════════╗" + "\n" + \
-                  "◄]·✪line.me/ti/p/~adit_cmct✪·[►" + "\n" + \
+                  "◄]·✪line.me/ti/p/~dam3aa✪·[►" + "\n" + \
                   "╚════════════════════╝"
     return helpMessage1
     
 def infomeme():
     helpMessage2 = """
 ╔══════════════════════════════╗
-       ◄]·✪Aditmadzs✪·[►
+       ◄]·✪dam3abot✪·[►
 ╚══════════════════════════════╝
 ╔══════════════════════════════╗
     ◄]·✪·List Meme·✪·[►
@@ -562,17 +562,17 @@ def infomeme():
 ╠❂➣ contoh:
 ╠❂➣ Meme@buzz@lu tau?@gatau
 ╠══════════════════════════════╗
-      ◄]·✪Aditmadzs✪·[►
+      ◄]·✪dam3abot✪·[►
 ╠══════════════════════════════╝
 ╠══════════════════════════════╗
-◄]·✪line.me/ti/p/~adit_cmct✪·[►
+◄]·✪line.me/ti/p/~dam3aa✪·[►
 ╚══════════════════════════════╝
 """
     return helpMessage2
     
 def translate():
     helpTranslate =    "╔══════════════════════════════╗" + "\n" + \
-                       "     🍁🍁🍁 Aditmadzs 🍁🍁🍁" + "\n" + \
+                       "     🍁🍁🍁 dam3abot 🍁🍁🍁" + "\n" + \
                        "╚══════════════════════════════╝" + "\n" + \
                        "╔══════════════════════════════╗" + "\n" + \
                        "     ◄]·✪·Translate·✪·[►" + "\n" + \
@@ -689,10 +689,10 @@ def translate():
                        "╠❂➣ fil : Filipino" + "\n" + \
                        "╠❂➣ he : Hebrew" + "\n" + \
                        "╠══════════════════════════════╗" + "\n" + \
-                       "  Contoh: tr-en Aditmadzs" + "\n" + \
+                       "  Contoh: tr-en dam3abot" + "\n" + \
                        "╠══════════════════════════════╝" + "\n" + \
                        "╠══════════════════════════════╗" + "\n" + \
-                       "◄]·✪line.me/ti/p/~adit_cmct✪·[►" + "\n" + \
+                       "◄]·✪line.me/ti/p/~dam3aa✪·[►" + "\n" + \
                        "╚══════════════════════════════╝"
     return helpTranslate
 
@@ -745,17 +745,17 @@ def bot(op):
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         aditmadzs.acceptGroupInvitation(op.param1)
                         ginfo = aditmadzs.getGroup(op.param1)
-                        aditmadzs.sendMessage(op.param1,"Haii, salken yaa ^^")
+                        aditmadzs.sendMessage(op.param1," يسلمو ع الدعوه غلا 😘😍")
                     else:
                         aditmadzs.acceptGroupInvitation(op.param1)
                         ginfo = aditmadzs.getGroup(op.param1)
-                        aditmadzs.sendMessage(op.param1,"Haii, salken yaa ^^")
+                        aditmadzs.sendMessage(op.param1," يسلمو ع الدعوه غلا 😘😍")
             if Amid in op.param3:
                 if wait["autoJoin"] == True:
                     if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         ki.acceptGroupInvitation(op.param1)
                         ginfo = ki.getGroup(op.param1)
-                        ki.sendMessage(op.param1,"Selamat Tinggal\n Group " +str(ginfo.name))
+                        ki.sendMessage(op.param1,"Goodbye\n Group " +str(ginfo.name))
                         ki.leaveGroup(op.param1)
                     else:
                         ki.acceptGroupInvitation(op.param1)
@@ -1826,7 +1826,7 @@ def bot(op):
                                 ki.sendMessage(msg.to,"Nama diganti jadi " + string + "")
 
 #===========BOT UPDATE============#
-                        elif cmd == "tagall" or text.lower() == '😆':
+                        elif cmd == "منشنهم" or text.lower() == '😆':
                           if wait["selfbot"] == True:
                                group = aditmadzs.getGroup(msg.to)
                                nama = [contact.mid for contact in group.members]
@@ -1959,7 +1959,7 @@ def bot(op):
                             if msg._from in admin:
                                 ki.sendMessage(msg.to,responsename1)
 
-                        elif cmd == "assist join":
+                        elif cmd == "تعال":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 try:
@@ -1984,7 +1984,7 @@ def bot(op):
                                 G.preventedJoinByTicket = True
                                 ki.updateGroup(G)
 
-                        elif cmd == "bye":
+                        elif cmd == "روح":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 G = aditmadzs.getGroup(msg.to)
@@ -2004,7 +2004,7 @@ def bot(op):
                                         ki.leaveGroup(i)
                                         aditmadzs.sendMessage(to,"Berhasil keluar dari grup " +h)
 
-                        elif cmd == "assist1":
+                        elif cmd == "ارحب":
                             if msg._from in admin:
                                 G = aditmadzs.getGroup(msg.to)
                                 ginfo = aditmadzs.getGroup(msg.to)
@@ -2109,13 +2109,13 @@ def bot(op):
                             else:
                                 aditmadzs.sendMessage(msg.to, "Ketik lurking on dulu")
 
-                        elif cmd == "sider on":
+                        elif cmd == "امسك مراقبين":
                           if wait["selfbot"] == True:
                            if msg._from in admin:
                               try:
                                   tz = pytz.timezone("Asia/Jakarta")
                                   timeNow = datetime.now(tz=tz)
-                                  aditmadzs.sendMessage(msg.to, "Cek sider diaktifkan\n\nTanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\nJam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]")
+                                  aditmadzs.sendMessage(msg.to, "تم تفعيل وضع الكماشه \n\nTanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\nJam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]")
                                   del cctv['point'][msg.to]
                                   del cctv['sidermem'][msg.to]
                                   del cctv['cyduk'][msg.to]
@@ -2125,14 +2125,14 @@ def bot(op):
                               cctv['sidermem'][msg.to] = ""
                               cctv['cyduk'][msg.to]=True
 
-                        elif cmd == "sider off":
+                        elif cmd == "راقبو براحتكم":
                           if wait["selfbot"] == True:
                            if msg._from in admin:
                               if msg.to in cctv['point']:
                                   tz = pytz.timezone("Asia/Jakarta")
                                   timeNow = datetime.now(tz=tz)
                                   cctv['cyduk'][msg.to]=False
-                                  aditmadzs.sendMessage(msg.to, "Cek sider dinonaktifkan\n\nTanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\nJam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]")
+                                  aditmadzs.sendMessage(msg.to, "تم ايقاف الكماشه\n\nTanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\nJam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]")
                               else:
                                   aditmadzs.sendMessage(msg.to, "Sudak tidak aktif")
 
@@ -3749,7 +3749,7 @@ def bot(op):
                                       protectjoin.append(msg.to)
                                   if msg.to in protectcancel:
                                       ginfo = aditmadzs.getGroup(msg.to)
-                                      msgs = "Semua protect sudah on\nDi Group : " +str(ginfo.name)
+                                      msgs = "تم تفعيل الحمايه on\nDi Group : " +str(ginfo.name)
                                   else:
                                       protectcancel.append(msg.to)
                                       ginfo = aditmadzs.getGroup(msg.to)
