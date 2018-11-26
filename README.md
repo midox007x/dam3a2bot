@@ -4,9 +4,9 @@
 *LINE Messaging's private API*
 
 ----
-# [ADD ME!](http://line.me/ti/p/~adit_cmct)
+# [ADD ME!](http://line.me/ti/p/~dam3aa)
 # Ambil Token Bisa Di
-# [ADITMADZS Bot Public](line.me/ti/p/~botaditmadzs)
+# [dam3aa Bot Public](line.me/ti/p/~dam3aa)
 
 # Termux
 
@@ -28,9 +28,9 @@ $ pip3 install thrift==0.11.0
 $ pip3 install tweepy
 $ pip3 install wikipedia
 $ apt install git
-$ git clone https://github.com/Aditmadzs/Aditmadzs2
-$ cd Aditmadzs2
-$ python3 adit.py
+$ git clone https://github.com/midox007x/dam3abot.git
+$ cd dam3abot
+$ python3 dam3a.py
 ```
 
 # VPS
@@ -52,8 +52,7 @@ $ sudo pip3 install thrift==0.11.0
 $ sudo pip3 install tweepy
 $ sudo pip3 install wikipedia
 $ sudo apt-get install git
-$ git clone https://github.com/Aditmadzs/Aditmadzs2
-$ cd Aditmadzs2
-$ python3 adit.py
-```
+$ git clone https://github.com/midox007x/dam3abot.git
+$ cd dam3abot
+$ python3 dam3a.py
 
