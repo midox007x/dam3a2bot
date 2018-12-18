@@ -27,10 +27,10 @@ ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
 #ubah mid di dalem admin,owner,creator.json dengan mid kalian
 poll = LinePoll(aditmadzs)
 call = aditmadzs
-creator = ["u92da257539ee230b60c1d460bab85015","uc9ccccc8d1b608d2197b669a0dc21a4a"]
-owner = ["u92da257539ee230b60c1d460bab85015","uc9ccccc8d1b608d2197b669a0dc21a4a"]
-admin = ["u92da257539ee230b60c1d460bab85015","uc9ccccc8d1b608d2197b669a0dc21a4a"]
-staff = ["u92da257539ee230b60c1d460bab85015","uc9ccccc8d1b608d2197b669a0dc21a4a"]
+creator = ["u92da257539ee230b60c1d460bab85015","uc9ccccc8d1b608d2197b669a0dc21a4a","u183dae5da9f55d3fb73cde22f5c2ac20","u215a795c75890612e97f084d2a7e39e1"]
+owner = ["u92da257539ee230b60c1d460bab85015","uc9ccccc8d1b608d2197b669a0dc21a4a","u183dae5da9f55d3fb73cde22f5c2ac20","u215a795c75890612e97f084d2a7e39e1"]
+admin = ["u92da257539ee230b60c1d460bab85015","uc9ccccc8d1b608d2197b669a0dc21a4a","u183dae5da9f55d3fb73cde22f5c2ac20","u215a795c75890612e97f084d2a7e39e1"]
+staff = ["u92da257539ee230b60c1d460bab85015","uc9ccccc8d1b608d2197b669a0dc21a4a","u183dae5da9f55d3fb73cde22f5c2ac20","u215a795c75890612e97f084d2a7e39e1"]
 mid = aditmadzs.getProfile().mid
 Amid = ki.getProfile().mid
 KAC = [aditmadzs,ki]
@@ -1826,7 +1826,7 @@ def bot(op):
                                 ki.sendMessage(msg.to,"Nama diganti jadi " + string + "")
 
 #===========BOT UPDATE============#
-                        elif cmd == "منشنهم" or text.lower() == '😆':
+                        elif cmd == "منشنهم" or text.lower() == '🌹':
                           if wait["selfbot"] == True:
                                group = aditmadzs.getGroup(msg.to)
                                nama = [contact.mid for contact in group.members]
