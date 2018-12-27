@@ -219,7 +219,7 @@ def mentionMembers(to, mid):
 def siderMembers(to, mid):
     try:
         arrData = ""
-        textx = "أنت متصل الان「{}」\nمرحبا".format(str(len(mid)))
+        textx = "نورت القروب غلاي「{}」\nمرحبا".format(str(len(mid)))
         arr = []
         no = 1
         num = 2
@@ -451,7 +451,7 @@ def help():
                   " ◄]·✪dam3abot✪·[►" + "\n" + \
                   "╠════════════════════╝" + "\n" + \
                   "╠════════════════════╗" + "\n" + \
-                  "◄]·✪line.me/ti/p/~dam3aa✪·[►" + "\n" + \
+                  "◄]·✪line.me/ti/p/~midox007x✪·[►" + "\n" + \
                   "╚════════════════════╝"
     return helpMessage
     
@@ -521,7 +521,7 @@ def helpbot():
                   "  ◄]·✪dam3abot✪·[►" + "\n" + \
                   "╠════════════════════╝" + "\n" + \
                   "╠════════════════════╗" + "\n" + \
-                  "◄]·✪line.me/ti/p/~dam3aa✪·[►" + "\n" + \
+                  "◄]·✪line.me/ti/p/~midox007x✪·[►" + "\n" + \
                   "╚════════════════════╝"
     return helpMessage1
     
@@ -565,7 +565,7 @@ def infomeme():
       ◄]·✪dam3abot✪·[►
 ╠══════════════════════════════╝
 ╠══════════════════════════════╗
-◄]·✪line.me/ti/p/~dam3aa✪·[►
+◄]·✪line.me/ti/p/~midox007x✪·[►
 ╚══════════════════════════════╝
 """
     return helpMessage2
@@ -692,7 +692,7 @@ def translate():
                        "  Contoh: tr-en dam3abot" + "\n" + \
                        "╠══════════════════════════════╝" + "\n" + \
                        "╠══════════════════════════════╗" + "\n" + \
-                       "◄]·✪line.me/ti/p/~dam3aa✪·[►" + "\n" + \
+                       "◄]·✪line.me/ti/p/~midox007x✪·[►" + "\n" + \
                        "╚══════════════════════════════╝"
     return helpTranslate
 
@@ -1570,7 +1570,7 @@ def bot(op):
                                pesan = text.replace(sep[0] + " ","")
                                saya = aditmadzs.getGroupIdsJoined()
                                for group in saya:
-                                   aditmadzs.sendMessage(group,"=======[BROADCAST]=======\n\n"+pesan+"\n\nCreator : line.me/ti/p/~dam3aa")
+                                   aditmadzs.sendMessage(group,"=======[BROADCAST]=======\n\n"+pesan+"\n\nCreator : line.me/ti/p/~midox007x")
 
                         elif text.lower() == "mykey":
                           if wait["selfbot"] == True:
