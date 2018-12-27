@@ -219,7 +219,7 @@ def mentionMembers(to, mid):
 def siderMembers(to, mid):
     try:
         arrData = ""
-        textx = "نورت القروب غلاي「{}」\nمرحبا".format(str(len(mid)))
+        textx = "هلا والله هلا وغلا 「{}」\nمرحبا".format(str(len(mid)))
         arr = []
         no = 1
         num = 2
@@ -2115,7 +2115,7 @@ def bot(op):
                               try:
                                   tz = pytz.timezone("Asia/Jakarta")
                                   timeNow = datetime.now(tz=tz)
-                                  aditmadzs.sendMessage(msg.to, "تم تفعيل وضع الكماشه \n\nTanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\nJam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]")
+                                  aditmadzs.sendMessage(msg.to, "تم تفعيل وضع الكماشه \n\nبتاريخ : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\nالساعه [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]")
                                   del cctv['point'][msg.to]
                                   del cctv['sidermem'][msg.to]
                                   del cctv['cyduk'][msg.to]
@@ -2132,7 +2132,7 @@ def bot(op):
                                   tz = pytz.timezone("Asia/Jakarta")
                                   timeNow = datetime.now(tz=tz)
                                   cctv['cyduk'][msg.to]=False
-                                  aditmadzs.sendMessage(msg.to, "تم ايقاف الكماشه\n\nTanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\nJam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]")
+                                  aditmadzs.sendMessage(msg.to, "تم ايقاف الكماشه\n\nبتاريخ : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\nالساعه [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]")
                               else:
                                   aditmadzs.sendMessage(msg.to, "Already inactive")
 
