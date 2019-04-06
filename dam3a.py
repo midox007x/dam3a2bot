@@ -13,13 +13,13 @@ from googletrans import Translator
 import youtube_dl
 
 aditmadzs = LineClient()
-#aditmadzs = LineClient(authToken='LOGIN TOKEN')
+#aditmadzs = LineClient(authToken='EDYQqXQ4ecEFZd304nZb.Pp6Zv1RP5iLQumuTxF7a6W.2RPwTIlm30P3gAeWuTls7oFX0xTAUacb10kq1HJVWf4=')
 aditmadzs.log("Auth Token : " + str(aditmadzs.authToken))
 channel = LineChannel(aditmadzs)
 aditmadzs.log("Channel Access Token : " + str(channel.channelAccessToken))
 
 ki = LineClient()
-#ki = LineClient(authToken='LOGIN TOKEN')
+#ki = LineClient(authToken='EDw6ZuBQPlwWhNUvV6lf.C1TGKBgIdiK7vwSq6eXtlW.Yi5baxn8J/YNPxdnkC4SoZZ7STAcDfY/uDMGV1mH/l4=')
 ki.log("Auth Token : " + str(ki.authToken))
 channel1 = LineChannel(ki)
 ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
@@ -27,10 +27,10 @@ ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
 #ubah mid di dalem admin,owner,creator.json dengan mid kalian
 poll = LinePoll(aditmadzs)
 call = aditmadzs
-creator = ["u92da257539ee230b60c1d460bab85015","uc9ccccc8d1b608d2197b669a0dc21a4a","u183dae5da9f55d3fb73cde22f5c2ac20","u215a795c75890612e97f084d2a7e39e1"]
-owner = ["u92da257539ee230b60c1d460bab85015","uc9ccccc8d1b608d2197b669a0dc21a4a","u183dae5da9f55d3fb73cde22f5c2ac20","u215a795c75890612e97f084d2a7e39e1"]
-admin = ["u92da257539ee230b60c1d460bab85015","uc9ccccc8d1b608d2197b669a0dc21a4a","u183dae5da9f55d3fb73cde22f5c2ac20","u215a795c75890612e97f084d2a7e39e1"]
-staff = ["u92da257539ee230b60c1d460bab85015","uc9ccccc8d1b608d2197b669a0dc21a4a","u183dae5da9f55d3fb73cde22f5c2ac20","u215a795c75890612e97f084d2a7e39e1"]
+creator = ["u63c91b1f62794e43d390db0f88bfe140"]
+owner = ["u735b6091b1a20c893b556b10e84c532f","ua4feb3575ae9e4896a50c52d5dfec0eb","u63c91b1f62794e43d390db0f88bfe140"]
+admin = ["u735b6091b1a20c893b556b10e84c532f","ua4feb3575ae9e4896a50c52d5dfec0eb","u63c91b1f62794e43d390db0f88bfe140"]
+staff = ["u735b6091b1a20c893b556b10e84c532f","ua4feb3575ae9e4896a50c52d5dfec0eb","u63c91b1f62794e43d390db0f88bfe140"]
 mid = aditmadzs.getProfile().mid
 Amid = ki.getProfile().mid
 KAC = [aditmadzs,ki]
